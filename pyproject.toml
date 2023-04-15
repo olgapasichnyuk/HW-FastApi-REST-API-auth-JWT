@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "hw-fastapi-rest-api-auth-jwt"
+version = "0.1.0"
+description = ""
+authors = ["olgapasichnyuk <olgapasichnyuk@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hw_fastapi_rest_api_auth_jwt"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+sqlalchemy = "^2.0.9"
+uvicorn = {extras = ["standart"], version = "^0.21.1"}
+psycopg2 = "^2.9.6"
+alembic = "^1.10.3"
+pydentic = {extras = ["email"], version = "^0.0.1.dev3"}
+libgravatar = "^1.0.4"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
